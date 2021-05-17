@@ -14,11 +14,22 @@ $(function () {
     $("#nameshow").css("color","blue");
     }
   });
-//  let targetText = document.getElementById('nameshow');
- // if(targetText.style.color=='blue'){
- //   $("#show").on("click", function () {
- //      $("#nameshow").css("color","red");
- //     }); 
- // }
+
+
+  $("#hobby").on("change",function(){
+   
+    if($("#hobby").val()==1){
+        $("#try").css("display","block");
+        $("#other").css("display","none");
+    }else if($("#hobby").val()==2){
+        $("#other").css("display","block");
+        $("#try").css("display","none");
+    }else if($("#hobby").val()==0){
+        $("#other").css("display","none");
+        $("#try").css("display","none");
+        
+    }
+  });
+
 
 });
